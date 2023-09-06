@@ -1,0 +1,31 @@
+* {
+    font-family: "Poppins-Regular", Helvetica;
+}
+
+.fullWidthColumn {
+    flex: 0 0 100%;
+}
+
+.oneFourthColumn {
+    flex: 0 0 25%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 32px;
+}
+.footerRight a {
+    margin-left: 16px;
+}
+  
+#footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.footerNewLogo {
+    margin-left: 16px;
+    margin-top: 16px;
+    height: 90px;
+}
