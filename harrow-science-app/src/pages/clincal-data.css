@@ -1,0 +1,118 @@
+
+.banner2 {
+    background: linear-gradient(180deg, rgb(5, 46, 66) 24.98%, rgb(0, 7, 11) 100%);
+    padding: 0;
+    background-size: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 0 0;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+}
+
+.banner-text {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 82px;
+    font-family: "Poppins-Medium", Helvetica;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.home-s2 {
+    text-align: center;
+}
+
+.container .med-description {
+    color: #676767;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    text-align: left;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.container .med-description p span {
+    font-weight: bold;
+}
+
+.home-s2 .med-menu .buttons-row {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-s2 .med-menu .buttons-row button {
+    border: 1px solid;
+    border-color: #676767;
+    border-radius: 23.5px;
+    background-color: transparent;
+    color: #676767;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.home-s2 .med-menu .buttons-row button:hover {
+    background-color: #80aba5;
+    color: white;
+}
+
+.home-s3 .box-row {
+    display: inline;
+    margin-left: 250px;
+    margin-right: 250px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.home-s3 .box-row .square {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #67676708;
+    box-shadow: 0px 4px 30px 1px #00000026;
+    padding: 5px;
+    margin: 10px;
+}
+
+.home-s3 .box-row .square p {
+    text-align: left;
+}
+
+.home-s3 .box-row .square .line-one {
+    font-size: 10px;
+    color: #6767679e;
+}
+
+.home-s3 .box-row .square .line-two {
+    font-size: 15px;
+    color: #00070b;
+    font-weight: bold;
+}
+
+.home-s3 .box-row .square .line-three {
+    font-size: 12px;
+    color: #676767;
+}
+
+.home-s3 .box-row .square .line-four {
+    font-size: 12px;
+    color: #676767;
+}
+
+.home-s3 .box-row .square button {
+    background-color: #d9d9d9;
+    border-radius: 18px;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
