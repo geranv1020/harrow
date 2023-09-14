@@ -1,13 +1,12 @@
-import * as React from "react";
+import React, {useState, useRef} from "react";
 import Header from "../common/header";
 import { useFormik } from 'formik';
 import { ContactSchema } from "../schemas";
 import '../App.css';
-import state from "../state";
 import Modal from 'react-modal'
 import Footer from "../common/footer";
 
-const medinfo = () => {
+const MedInfo = () => {
 
     const [isLoader, setIsLoader] = useState(false);
     const [openLoadermodal, setopenLoadermodal] = useState(false)
@@ -206,24 +205,6 @@ const medinfo = () => {
                                                     <p style={{ color: "red", fontSize: "15px" }}>{errors.city}</p>
                                                     : null}
                                             </div>
-                                            <div className="form-input-col6" key="5">
-                                                <select name="states" required="Required"
-                                                    value={values.states}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.states && touched.states ? "input-error" : null}
-                                                >
-                                                    <option value="1">State*</option>
-                                                    {state.map((res) => {
-                                                        return (
-                                                        <option key={res}>{res}</option>
-                                                        )
-                                                    })}
-                                                </select>
-                                                {errors.states && touched.states ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.states}</p>
-                                                    : null}
-                                            </div>
                                             <div className="form-input-col6" key="2">
                                                 <input type="text" name="zip" placeholder="" 
                                                     value={values.zip}
@@ -360,5 +341,5 @@ const medinfo = () => {
     )
 }
 
-export default medinfo
+export default MedInfo
 

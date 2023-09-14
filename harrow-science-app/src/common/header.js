@@ -6,7 +6,7 @@ function Header() {
         <header className="header">
             {/*logo*/}
             <div className="logo">
-                <img src="logo.png" alt="Logo" />
+                <img src="/logo512.png" alt="Logo" />
             </div>
 
             {/*pages*/}
