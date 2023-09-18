@@ -5,8 +5,8 @@ function Header() {
 	return (
 		<header className="header">
 			{/*logo*/}
-			<div className="logo">
-				<img src="/logo512.png" alt="Logo" />
+			<div className="harrow-logo">
+				<img src="/main-harrow-logo.svg" alt="Logo" />
 			</div>
 
 			{/*pages*/}
@@ -31,10 +31,14 @@ function Header() {
 			</nav>
 
 			{/*search bar*/}
-			<div className="search-bar">
-				<input type="text" placeholder="Search" />
-				<button>Search</button>
-			</div>
+			<section>
+				<div class="saerch-bar">
+					<form>
+						<input type="search" placeholder="Search..."/>
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</section>
 		</header>
 	);
 }
