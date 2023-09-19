@@ -11,6 +11,7 @@ const Home = () => {
 			{/*hero*/}
 			<section className="banner">
 				<div className="container">
+                    <img src="/header1.jpg" className="hero" alt="blue science" />
 					<div className="banner-text">
 						<h1>Harrow Medical Affairs</h1>
 						<h3>Committed to scientific integrity.</h3>
