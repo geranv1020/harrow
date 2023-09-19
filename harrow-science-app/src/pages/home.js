@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../common/header";
 import Footer from "../common/footer";
-import './home.css';
+import '../App.css';
 
 const Home = () => {
 	return (
@@ -18,7 +18,7 @@ const Home = () => {
 				</div>
 			</section>
 			{/*learn more*/}
-			<section className="home-s2">
+			<div className="home-s2">
 				<div className="text">
 					<p>
 						At Harrow Medical Affairs, our mission is to challenge the scientific landscape, by partnering with<br />
@@ -26,10 +26,12 @@ const Home = () => {
                         we serve.
 					</p>
 				</div>
+            </div>
+            <section>
 				<div className="image-row">
                     <div className="icon-container">
                         <div className="icon">
-                            <img src="group-1495.png" alt="phone/tablet icon" />
+                            <img src="/clinical-icon.svg" alt="phone/tablet icon" />
                         </div>
                         <div className="icon-title">
                             <h2>Clinical Data</h2>
@@ -40,10 +42,10 @@ const Home = () => {
                     </div>
                     <div className="icon-container">
                         <div className="icon">
-                            <img src="group-1494.png" alt="filed form icon" />
+                            <img src="/idea-icon.svg" alt="filed form icon" />
                         </div>
                         <div className="icon-title">
-                            <h2>Clinical Data</h2>
+                            <h2>Submit idea for IIT</h2>
                         </div>
                         <div>
                             <button>Learn More</button>
@@ -51,10 +53,10 @@ const Home = () => {
                     </div>
                     <div className="icon-container">
                         <div className="icon">
-                            <img src="group-1493.png" alt="hands over heart icon" />
+                            <img src="/heart-icon.svg" alt="hands over heart icon" />
                         </div>
                         <div className="icon-title">
-                            <h2>Clinical Data</h2>
+                            <h2>Charitable Grant Request</h2>
                         </div>
                         <div>
                             <button>Learn More</button>
@@ -70,8 +72,8 @@ const Home = () => {
                         <div className="container posts">
 						    <div className="top-half">
 							    <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								    eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur<br />
+                                    adipiscing elit, sed do eiusmod tempor.
                                 </p>
 						    </div>
 						    <div className="bottom-half">
@@ -82,8 +84,8 @@ const Home = () => {
                         <div className="container posts">
                             <div className="top-half">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur<br />
+                                    adipiscing elit, sed do eiusmod tempor.
                                 </p>
                             </div>
                             <div className="bottom-half">
@@ -94,8 +96,8 @@ const Home = () => {
                         <div className="container posts">
                             <div className="top-half">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur<br />
+                                    adipiscing elit, sed do eiusmod tempor.
                                 </p>
                             </div>
                             <div className="bottom-half">

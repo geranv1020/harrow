@@ -28,30 +28,66 @@ color: red;
   content: "para";
 }
 
-/*.inner-text >h3{
-  margin-top: 50px;
-  letter-spacing: 0;
-    color: #1E1E1E;
-    font-family: 'Bicyclette';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    text-align: center;
-    /*padding-left: 50px;
-    padding-right: 50px;
-} */
-
-
 /* home page*/
+
+/* home banner */
+.banner {
+  background: linear-gradient(180deg, rgb(5, 46, 66) 24.98%, rgb(0, 7, 11) 100%);
+  padding: 20px;
+  background-size: 100%;
+  height: 305px;
+  background-repeat: no-repeat;
+  margin: 0 0 0;
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+}
+
+.banner-text {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 82px;
+  font-family: "Poppins-Medium", Helvetica;
+}
+
+.banner-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+ /* home body */
+
+.home-s2 p {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #676767;
+  font-weight: 600;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: 90px;
+}
+
 .image-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 90px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-.icon {
+.icon-container {
   text-align: center;
+}
+
+.icon-title h2 {
+  color: #676767;
 }
 
 .icon img {
@@ -60,35 +96,70 @@ color: red;
   margin-bottom: 10px;
 }
 
-.icon button {
-  background-color: #333;
+.icon-container button {
+  background-color: #31708A;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 30px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.containers-row {
+/*.containers-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}*/
+
+.home-s3 {
+  background: linear-gradient(180deg, rgb(49, 112, 138) 0%, rgb(128, 171, 165) 100%);
+  height: 380px;
 }
 
-.container {
-  border: 1px solid #ccc;
-  padding: 20px;
-  flex: 1;
+.recent h1 {
+  color: white;
   text-align: center;
+  padding-top: 50px;
+}
+
+.post-row {
+  margin: 30px 150px 20px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0px 0px 54px 2px #00000026;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 .top-half {
   margin-bottom: 10px;
+  padding: 10px 20px;
 }
 
 .bold-text {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 50px;
+  color: #676767;
+}
+
+.bottom-half button {
+  background-color: #80aba5;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+
+.bottom-half {
+  padding-bottom: 20px;
 }
 
 /*.message{

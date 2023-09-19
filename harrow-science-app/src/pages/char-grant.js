@@ -3,12 +3,16 @@ import Header from "../common/header";
 import Footer from "../common/footer";
 
 const Char = () => {
-    <>
-        < Header />
+    return (
+        <>
+            < Header />
+                <div className="construction">
+                    <img src="/under_construction.svg" alt="site under construction" />
+                </div>
 
-
-        <Footer />
-    </>
-}
+            <Footer />
+        </>
+    );
+};
 
 export default Char;
