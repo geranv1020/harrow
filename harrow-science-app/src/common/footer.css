@@ -10,13 +10,25 @@
     flex: 0 0 25%;
 }
 
+.oneFourthColumn h4 {
+    font-weight: 100;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     padding: 16px 32px;
+    background-color: #021931;
+    color: white;
+}
+
+.footerRight {
+    margin-right: 30px;
 }
 .footerRight a {
     margin-left: 16px;
+    color: #31708A;
+    text-decoration: none;
 }
   
 #footerBottom {
@@ -24,8 +36,36 @@ footer {
     justify-content: space-between;
     margin-top: 64px;
 }
+
 .footerNewLogo {
-    margin-left: 16px;
-    margin-top: 16px;
-    height: 90px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 70px;
+}
+
+.address {
+    line-height: 25px;
+}
+
+.phone a {
+    color: #31708A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-left: 30px;
+}
+
+.phone p {
+    line-height: 25px;
+}
+
+.linkedin img {
+    height: 21px;
+}
+
+.linkedin .site-link a {
+    text-decoration: none;
+    color: #31708A;
 }

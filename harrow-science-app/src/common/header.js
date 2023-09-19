@@ -10,35 +10,35 @@ function Header() {
 			</div>
 
 			{/*pages*/}
-			<nav className="menu">
-				<ul className="page-list">
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/clinicaldata">Clinical Data</a>
-					</li>
-					<li>
-						<a href="/iit">Investigator-initiated Trials</a>
-					</li>
-					<li>
-						<a href="/medinfo">Medical Info Requests</a>
-					</li>
-					<li>
-						<a href="/charitablegrant">Charitable Grant Requests</a>
-					</li>
-				</ul>
-			</nav>
+			<div>
+				<nav className="menu">
+					<ul className="page-list">
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/clinicaldata">Clinical Data</a>
+						</li>
+						<li>
+							<a href="/iit">Investigator-initiated Trials</a>
+						</li>
+						<li>
+							<a href="/medinfo">Medical Info Requests</a>
+						</li>
+						<li>
+							<a href="/charitablegrant">Charitable Grant Requests</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 
 			{/*search bar*/}
-			<section>
-				<div class="saerch-bar">
-					<form>
-						<input type="search" placeholder="Search..."/>
-						<button type="submit">Search</button>
-					</form>
-				</div>
-			</section>
+			<div class="search-bar">
+				<form>
+					<input type="search" placeholder="Search..."/>
+					<button type="submit">Search</button>
+				</form>
+			</div>
 		</header>
 	);
 }
