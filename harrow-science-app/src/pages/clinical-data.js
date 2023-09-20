@@ -10,7 +10,7 @@ function Clinical() {
             < Header />
             {/*hero*/}
             <section className="banner2">
-                <div className="container">
+                <div className="container clinical-banner">
                     <img src="/header2.jpg" className="hero" alt="science" />
                     <div className="clin-banner-text">
                         <h1>Clinical Data</h1>
@@ -35,7 +35,8 @@ function Clinical() {
                 </div>
                 <div className="med-description">
                     <p>
-                        Vevye (cyclosporine ophthalmic solution 0.1%) is a calcineurin inhibitor immunosuppressant indicated for the treatment of the signs and symptoms of dry eye disease. Please see Prescribing Information for more details.
+                        <span>Vevye</span> (cyclosporine ophthalmic solution 0.1%) is a calcineurin inhibitor immunosuppressant indicated for the<br />
+                        treatment of the signs and symptoms of dry eye disease. Please see Prescribing Information for more details.
                     </p>
                 </div>
             </section>
@@ -44,59 +45,95 @@ function Clinical() {
             <section className="container data-boxes">
                 <div className="container-row">
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
 
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
 
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
                 </div>
 
                 <div className="container-row">
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
 
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
 
                     <div className="box">
-                        <img src="image.png" alt="lorem"></img>
+                        <img src="/grey-square.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
-                        <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
-                        <p className="line-four">lorem ipsum</p>
+                        <h2 className="line-two">
+                            lorem ipsum lorem ipsum<br />
+                            lorem ipsum
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
                         <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
                     </div>
                 </div>
             </section>

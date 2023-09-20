@@ -191,8 +191,8 @@ color: red;
   position: absolute;
   font-size: 18px;
   color: white;
-  top: 260px;
-  left: 530px;
+  top: 200px;
+  left: 240px;
 }
 
 .clin-banner-text h1, h3 {
@@ -201,29 +201,23 @@ color: red;
 }
 
 .clin-banner-text h1 {
-  font-size: 40px;
+  font-size: 35px;
+}
+
+.clin-banner-text h3 {
+  font-size: 19px;
 }
 
 /* top screen menu */
-
-.topscreen-btns .med-description {
-  color: #676767;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: inline-block;
-  text-align: left;
-  line-height: 25px;
-  font-weight: bold;
-}
-
-.topscreen-btns .med-description p span {
-  font-weight: bold;
-}
 
 .topscreen-btns .med-menu .buttons-row {
   display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .topscreen-btns .med-menu .buttons-row button {
@@ -232,8 +226,7 @@ color: red;
   border-radius: 23.5px;
   background-color: transparent;
   color: #676767;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px 20px;
   font-size: 14px;
   margin: 15px;
 }
@@ -243,15 +236,33 @@ color: red;
   color: white;
 }
 
+.topscreen-btns .med-description {
+  color: #676767;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  line-height: 25px;
+}
+
+.topscreen-btns .med-description p {
+  display: inline-block;
+  text-align: left;
+}
+
+.topscreen-btns .med-description p span {
+  font-weight: bold;
+}
+
 /* data boxes */
 
 .data-boxes .container-row {
-  display: inline;
-  margin-left: 250px;
-  margin-right: 250px;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  text-align: center;
+  align-items: center;
 }
 
 .data-boxes .container-row .box {
@@ -259,12 +270,14 @@ color: red;
   border: 1px solid;
   border-color: #67676708;
   box-shadow: 0px 4px 30px 1px #00000026;
-  padding: 5px;
-  margin: 10px;
+  margin: 40px;
+  text-align: center;
 }
 
-.data-boxes .container-row .box p {
+.data-boxes .container-row .box h2, p {
   text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .data-boxes .container-row .box .line-one {
@@ -273,7 +286,7 @@ color: red;
 }
 
 .data-boxes .container-row .box .line-two {
-  font-size: 15px;
+  font-size: 17px;
   color: #00070b;
   font-weight: bold;
 }
@@ -286,14 +299,18 @@ color: red;
 .data-boxes .container-row .box .line-four {
   font-size: 12px;
   color: #676767;
+  float: left;
+  margin-top: 30px;
 }
 
 .data-boxes .container-row .box button {
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
   border-radius: 18px;
   color: black;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 5px 20px;
+  border: none;
+  float: right;
+  margin: 10px;
 }
 
 
@@ -513,7 +530,7 @@ color: red;
 
  /* form */
 
-.med-form .row {
+.med-form .med-row {
   margin: 10 30 10 70px;
 }
 
