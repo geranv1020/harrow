@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../common/header";
 import Footer from "../common/footer";
-import './clinical-data.css';
+import '../App.css';
 
 function Clinical() {
     return (
@@ -11,17 +11,16 @@ function Clinical() {
             {/*hero*/}
             <section className="banner2">
                 <div className="container">
-                    <div className="banner-text">
+                    <img src="/header2.jpg" className="hero" alt="science" />
+                    <div className="clin-banner-text">
                         <h1>Clinical Data</h1>
-                        <div className="banner-text-h3">
-                            <h3>Because the conscientious, explicit and judicious use of evidence in making decisions about patient care matters.</h3>
-                        </div>
+                        <h3>Because the conscientious, explicit and judicious use of evidence in making decisions about patient care matters.</h3>
                     </div>
                 </div>
             </section>
 
             {/*medication menu and description*/}
-            <section className="container">
+            <section className="container topscreen-btns">
                 <div className="med-menu">
                     <div className="buttons-row">
                         <button>All</button>
@@ -42,12 +41,12 @@ function Clinical() {
             </section>
 
             {/*data containers*/}
-            <section className="container">
+            <section className="container data-boxes">
                 <div className="container-row">
                     <div className="box">
                         <img src="image.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
+                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
                         <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
                         <p className="line-four">lorem ipsum</p>
                         <button>Learn More</button>
@@ -56,7 +55,7 @@ function Clinical() {
                     <div className="box">
                         <img src="image.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
+                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
                         <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
                         <p className="line-four">lorem ipsum</p>
                         <button>Learn More</button>
@@ -65,7 +64,7 @@ function Clinical() {
                     <div className="box">
                         <img src="image.png" alt="lorem"></img>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
-                        <h2>lorem ipsum lorem ipsum lorem ipsum</h2>
+                        <h2 className="line-two">lorem ipsum lorem ipsum lorem ipsum</h2>
                         <p className="line-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velou valupiu ameru.</p>
                         <p className="line-four">lorem ipsum</p>
                         <button>Learn More</button>

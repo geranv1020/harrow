@@ -3,7 +3,6 @@ import Header from "../common/header";
 import { useFormik } from 'formik';
 import { ContactSchema } from "../schemas";
 import '../App.css';
-import './med-info.css';
 import Modal from 'react-modal'
 import Footer from "../common/footer";
 
@@ -80,14 +79,13 @@ const MedInfo = () => {
     return (
         <>
             <Header />
-            <section className="pagetitle pagetitleCONTACT">
-                <div className="container">
-                    <div className="pagetitle-text">
+            <section className="med-pagetitle">
+                <div className="container med-banner">
+                    <img src="/header2.jpg" className="hero" alt="science" />
+                    <div className="medinfo-text">
                         <h1>MEDICAL INFORMATION REQUEST FORM</h1>
                         <h3>Please fill out the following form to request medical information</h3>
                     </div>
-                    <div className="pg-icon-2"><img src="img/pg-icon-2.png" alt="" /></div>
-                    <div className="pg-icon-3"><img src="img/pg-icon-3.png" alt="" /></div>
                 </div>
             </section>
             {/* <!-- ==============================PAGETITLE SECTION--> */}
@@ -160,148 +158,166 @@ const MedInfo = () => {
                 </div>
             </div> :
                 <section className="medinfo">
-                        <div className="container">
-                            <div className="form" id="medinfo-form" onSubmit={handleSubmit}>
+                    <div className="container">
+                        <div className="medinfo-header">
+                            <h2>Contact Information of Requesting Healthcare Professional</h2>
+                        </div>
+                        <div className="med-form" id="medinfo-form" onSubmit={handleSubmit}>
                             <form>
-                                <div className="medinfo-header">
-                                    <h2>Contact Information of Requesting Healthcare Professional</h2>
-                                </div>
-                                <div className="form-rows">
-                                    <div className="form-col-L">
-                                        <div className="form-input-rows">
-                                            <div className="form-input-col6" key="1">
-                                                <label for="rhp_name">Name of Requesting Healthcare Professional*</label>
-                                                <input type="text" name="rhp_name" placeholder=""
-                                                    value={values.rhp_name}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.rhp_name && touched.rhp_name ? "input-error" : null}
-                                                />
-                                                {errors.rhp_name && touched.rhp_name ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.rhp_name}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="2">
-                                                <label for="practice_name">Instition Name/Practice Name*</label>
-                                                <input type="text" name="practice_name" placeholder="" 
-                                                    value={values.practice_name}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.practice_name && touched.practice_name ? "input-error" : null}
-                                                />
-                                                {errors.practice_name && touched.practice_name ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.practice_name}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="2">
-                                                <label for="city">City*</label>
-                                                <input type="text" name="city" placeholder="" 
-                                                    value={values.city}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.city && touched.city ? "input-error" : null}
-                                                />
-                                                {errors.city && touched.city ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.city}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="2">
-                                                <label for="zip">ZIP(XXXXX)*</label>
-                                                <input type="text" name="zip" placeholder="" 
-                                                    value={values.zip}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.zip && touched.zip ? "input-error" : null}
-                                                />
-                                                {errors.zip && touched.zip ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.zip}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="4">
-                                                <label for="phone_no">Phone Number (XXX-XXX-XXXX)*</label>  
-                                                <input type="text" name="phone_no" placeholder=""
-                                                    value={values.phone_no.replace(/\D/g,'')}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.phone_no && touched.phone_no ? "input-error" : null}
-                                                />
-                                                {errors.phone_no && touched.phone_no ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.phone_no}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="2">
-                                                <label for="contact_time">Best Time to Contact*</label>
-                                                <input type="text" name="contact_time" placeholder="" 
-                                                    value={values.contact_time}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.contact_time && touched.contact_time ? "input-error" : null}
-                                                />
-                                                {errors.contact_time && touched.contact_time ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.contact_time}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="3">
-                                                <label for="email">Email*</label>
-                                                <input type="text" name="email" placeholder=""
-                                                    value={values.email}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.email && touched.email ? "input-error" : null}
-                                                />
-                                                {errors.email && touched.email ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.email}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="6">
-                                                <select name="hcp" required="Required"
-                                                    value={values.hcp}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.hcp && touched.hcp ? "input-error" : null}
-                                                >
-                                                    <option value="1">Type of HCP*</option>
-                                                    <option value="MD">MD</option>
-                                                    <option value="DO">DO</option>
-                                                    <option value="OD">OD</option>
-                                                    <option value="Ph.D">Ph.D</option>
-                                                    <option value="R.Ph">R.Ph</option>
-                                                    <option value="R.N.">R.N.</option>
-                                                    <option value="PharmD">PharmD</option>
-                                                    <option value="Other">Other</option>
-                                                </select>
-                                                {errors.hcp && touched.hcp ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.hcp}</p>
-                                                    : null}
-                                            </div>
-                                            <div className="form-input-col6" key="8">
-                                                <select name="response" required="Required"
-                                                    value={values.response}
-                                                    onChange={handleChange}
-                                                    onBlur={handleBlur}
-                                                    className={errors.response && touched.response ? "input-error" : null}
-                                                >
-                                                    <option value="1">Preferred Method of Response*</option>
-                                                    <option value="Phone">Phone</option>
-                                                    <option value="Email">Email</option>
-                                                    <option value="MSL Visit Requested ">MSL Visit Requested</option>
-                                                </select>
-                                                {errors.response && touched.response ?
-                                                    <p style={{ color: "red", fontSize: "15px" }}>{errors.response}</p>
-                                                    : null}
-                                            </div>
+                                <div className="medical-info">
+                                    <div className="med-row">
+                                        <div className="med-col" key="1">
+                                            <label for="rhp_name">Name of Requesting Healthcare Professional*</label>
+                                            <input type="text" name="rhp_name" placeholder=""
+                                                value={values.rhp_name}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.rhp_name && touched.rhp_name ? "input-error" : null}
+                                            />
+                                            {errors.rhp_name && touched.rhp_name ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.rhp_name}</p>
+                                                : null}
+                                        </div>
+                                        <div className="med-col" key="2">
+                                            <label for="practice_name">Instition Name/Practice Name*</label>
+                                            <input type="text" name="practice_name" placeholder="" 
+                                                value={values.practice_name}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.practice_name && touched.practice_name ? "input-error" : null}
+                                            />
+                                            {errors.practice_name && touched.practice_name ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.practice_name}</p>
+                                                : null}
                                         </div>
                                     </div>
-                                    <div className="textarea-header">
-                                        <h2>Medical Inquiry</h2>
-                                        <p>Please type your question below with as much detail as possible.</p>
+                                    <div className="med-row">
+                                        <div className="med-col" key="2">
+                                            <label for="city">City*</label>
+                                            <input type="text" name="city" placeholder="" 
+                                                value={values.city}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.city && touched.city ? "input-error" : null}
+                                            />
+                                            {errors.city && touched.city ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.city}</p>
+                                                : null}
+                                        </div>
+                                        <div className="med-col" key="2">
+                                            <label for="state">State*</label>
+                                            <input type="text" name="city" placeholder="" 
+                                                value={values.state}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.state && touched.state ? "input-error" : null}
+                                            />
+                                            {errors.state && touched.state ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.state}</p>
+                                                : null}
+                                        </div>
                                     </div>
-                                    <div className="form-col-R">
-                                        <textarea name="inquiry" placeholder=""
-                                        value={values.inquiry}
-                                        onChange={handleChange}
-                                        ></textarea>
+                                    <div className="med-row">
+                                        <div className="med-col" key="2">
+                                            <label for="zip">ZIP(XXXXX)*</label>
+                                            <input type="text" name="zip" placeholder="" 
+                                                value={values.zip}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.zip && touched.zip ? "input-error" : null}
+                                            />
+                                            {errors.zip && touched.zip ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.zip}</p>
+                                                : null}
+                                        </div>
+                                        <div className="med-col" key="4">
+                                            <label for="phone_no">Phone Number (XXX-XXX-XXXX)*</label>  
+                                            <input type="text" name="phone_no" placeholder=""
+                                                value={values.phone_no.replace(/\D/g,'')}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.phone_no && touched.phone_no ? "input-error" : null}
+                                            />
+                                            {errors.phone_no && touched.phone_no ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.phone_no}</p>
+                                                : null}
+                                        </div>
                                     </div>
+                                    <div className="med-row">
+                                        <div className="med-col" key="2">
+                                            <label for="contact_time">Best Time to Contact*</label>
+                                            <input type="text" name="contact_time" placeholder="" 
+                                                value={values.contact_time}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.contact_time && touched.contact_time ? "input-error" : null}
+                                            />
+                                            {errors.contact_time && touched.contact_time ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.contact_time}</p>
+                                                : null}
+                                        </div>
+                                        <div className="med-col" key="3">
+                                            <label for="email">Email*</label>
+                                            <input type="text" name="email" placeholder=""
+                                                value={values.email}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.email && touched.email ? "input-error" : null}
+                                            />
+                                            {errors.email && touched.email ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.email}</p>
+                                                : null}
+                                        </div>
+                                    </div>
+                                    <div className="med-row">
+                                        <div className="med-col" key="6">
+                                            <select name="hcp" required="Required"
+                                                value={values.hcp}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.hcp && touched.hcp ? "input-error" : null}
+                                            >
+                                                <option value="1">Type of HCP*</option>
+                                                <option value="MD">MD</option>
+                                                <option value="DO">DO</option>
+                                                <option value="OD">OD</option>
+                                                <option value="Ph.D">Ph.D</option>
+                                                <option value="R.Ph">R.Ph</option>
+                                                <option value="R.N.">R.N.</option>
+                                                <option value="PharmD">PharmD</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            {errors.hcp && touched.hcp ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.hcp}</p>
+                                                : null}
+                                        </div>
+                                        <div className="med-col" key="8">
+                                            <select name="response" required="Required"
+                                                value={values.response}
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                className={errors.response && touched.response ? "input-error" : null}
+                                            >
+                                                <option value="1">Preferred Method of Response*</option>
+                                                <option value="Phone">Phone</option>
+                                                <option value="Email">Email</option>
+                                                <option value="MSL Visit Requested ">MSL Visit Requested</option>
+                                            </select>
+                                            {errors.response && touched.response ?
+                                                <p style={{ color: "red", fontSize: "15px" }}>{errors.response}</p>
+                                                : null}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="textarea-header">
+                                    <h2>Medical Inquiry</h2>
+                                    <p>Please type your question below with as much detail as possible.</p>
+                                </div>
+                                <div className="form-col-R">
+                                    <textarea name="inquiry" placeholder=""
+                                    value={values.inquiry}
+                                    onChange={handleChange}
+                                    ></textarea>
                                 </div>
                                 <div className="checkbox-info">
                                     <p>

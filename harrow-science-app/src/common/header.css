@@ -21,7 +21,7 @@
     margin-right: 70px;
 }
   
-form {
+.header-search-btn {
     color: #555;
     display: flex;
     justify-content: center;

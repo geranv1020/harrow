@@ -34,7 +34,7 @@ function Header() {
 
 			{/*search bar*/}
 			<div class="search-bar">
-				<form>
+				<form className="header-search-btn">
 					<input type="search" placeholder="Search..."/>
 					<button type="submit">Search</button>
 				</form>

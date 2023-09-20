@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../App.css';
-import './investigator.css';
 import Header from "../common/header";
 import { useFormik } from 'formik';
 import { ContactSchema } from "../schemas";
@@ -91,13 +90,12 @@ const Investigator = () => {
         <>
             <Header />
             <section className="pagetitle-inv">
-                    <div className="container">
+                    <div className="container pgc">
+                        <img src="/header2.jpg" className="hero" alt="science" />
                         <div className="pagetitle-text">
                             <h1>SUBMIT AN INVESTIGATOR-INITIATED TRIAL PROPOSAL</h1>
                             <p>Please fill out the following form to submit your proposal.</p>
                         </div>
-                        <div className="pg-icon-2"><img src="img/pg-icon-2.png" alt="" /></div>
-                        <div className="pg-icon-3"><img src="img/pg-icon-3.png" alt="" /></div>
                     </div>
             </section>
             {/* <!-- ==============================PAGETITLE SECTION--> */}
@@ -168,9 +166,9 @@ const Investigator = () => {
                 <p style={{marginTop:"10px"}}>We'll be in contact soon</p>
                 </div>
            </div> :
-                <section className="section-one">
-                    <div className="container">
-                        <div className="contact-header">
+                <section className="iit-section-one">
+                    <div className="container iit-text">
+                        <div className="iit-header">
                             <h2>Use the form below to submit a proposal</h2>
                             <p>
                                 At Harrow, we believe in the need to support independent research conducted by qualified individuals that address important
@@ -187,10 +185,10 @@ const Investigator = () => {
                             <h3>Please provide your information below.</h3>
                         </div>
   
-                        <div className="form" id="iit-form" onSubmit={handleSubmit}>
+                        <div className="iit-form" id="iit-form" onSubmit={handleSubmit}>
                             <form className="form-input-rows">
-                                <div className="row">
-                                    <div className="col" key="1">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="1">
                                         <label for="full_name">Investigator Full Name*</label>
                                         <input type="text" name="full_name" id="inv-input" placeholder=""
                                             value={values.full_name}
@@ -202,7 +200,7 @@ const Investigator = () => {
                                             <p style={{ color: "red", fontSize: "15px" }}>{errors.full_name}</p>
                                             : null}
                                     </div>
-                                    <div className="col" key="4">
+                                    <div className="col iit-col" key="4">
                                         <label for="phone_no">Phone Number*</label>
                                         <input type="text" name="phone_no" id="inv-input" placeholder=""
                                             value={values.phone_no.replace(/\D/g,'')}
@@ -215,8 +213,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="3">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="3">
                                         <label for="email">Email*</label>
                                         <input type="text" name="email" id="inv-input" placeholder=""
                                             value={values.email}
@@ -228,7 +226,7 @@ const Investigator = () => {
                                             <p style={{ color: "red", fontSize: "15px" }}>{errors.email}</p>
                                             : null}
                                     </div>
-                                    <div className="form-input-col6" key="2">
+                                    <div className="col iit-col" key="2">
                                         <label for="city">City*</label>
                                         <input type="text" name="city" id="inv-input" placeholder=""
                                             value={values.city}
@@ -241,8 +239,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="state">State, Province or Territory</label>
                                         <input type="text" name="state" id="inv-input" placeholder=""
                                             value={values.states}
@@ -254,7 +252,7 @@ const Investigator = () => {
                                             <p style={{ color: "red", fontSize: "15px" }}>{errors.states}</p>
                                             : null}
                                     </div>
-                                    <div className="form-input-col6" key="6">
+                                    <div className="col iit-col" key="6">
                                         <option value="1">Country*</option>
                                         <select name="country" id="inv-input" required="Required"
                                             value={values.country}
@@ -273,8 +271,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="6">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="6">
                                         <select name="product" id="inv-input" required="Required"
                                             value={values.product}
                                             onChange={handleChange}
@@ -307,8 +305,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="title_of_study">Title of Study*</label>
                                         <input type="text" name="title_of_study" id="inv-input" placeholder=""
                                             value={values.title_of_study}
@@ -321,8 +319,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="rationale">Rationale for Trial*</label>
                                         <input type="text" name="rationale" id="inv-input" placeholder=""
                                             value={values.rationale}
@@ -335,8 +333,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="endpoint">Primary Objective/Endpoint</label>
                                         <input type="text" name="endpoint" id="inv-input" placeholder=""
                                             value={values.endpoint}
@@ -349,8 +347,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="years_experience">How many years of clinical research experience do you have?</label>
                                         <input type="text" name="years_experience" id="inv-input" placeholder=""
                                             value={values.years_experience}
@@ -363,8 +361,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="involved_studies">How many clinical studies are you currently involved in?</label>
                                         <input type="text" name="involved_studies" id="inv-input" placeholder=""
                                             value={values.involved_studies}
@@ -377,8 +375,8 @@ const Investigator = () => {
                                             : null}
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="form-input-col6" key="2">
+                                <div className="row iit-row">
+                                    <div className="col iit-col" key="2">
                                         <label for="coordinator">Do you have a dedicated research coordinator(s)?</label>
                                         <input type="text" name="coordinator" id="inv-input" placeholder=""
                                             value={values.coordinator}
