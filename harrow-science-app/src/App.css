@@ -88,11 +88,10 @@ color: red;
 
 .image-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 90px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: 80px 300px;
 }
 
 .icon-container {
@@ -124,6 +123,8 @@ color: red;
   align-items: center;
 }*/
 
+ /* most recent posts section */
+
 .home-s3 {
   background: linear-gradient(180deg, rgb(49, 112, 138) 0%, rgb(128, 171, 165) 100%);
   height: 380px;
@@ -147,9 +148,9 @@ color: red;
   background-color: #ffffff;
   border-radius: 18px;
   box-shadow: 0px 0px 54px 2px #00000026;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .top-half {
@@ -169,6 +170,7 @@ color: red;
   color: white;
   border: none;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .bottom-half {
@@ -352,22 +354,22 @@ color: red;
   font-weight: 700;
 }*/
 
-.pagetitle-inv .pgc {
+.pagetitle-inv .pagetitle-text {
   text-align: center;
   position: absolute;
   font-size: 18px;
   color: white;
-  top: 260px;
-  left: 530px;
+  top: 200px;
+  left: 300px;
 }
 
-.pagetitle-text h1, p {
+.pagetitle-text h1, h3 {
   position: relative;
   font-family: "Poppins-Medium", Helvetica;
 }
 
 .pagetitle-text h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 /* form text */
@@ -400,34 +402,31 @@ color: red;
 /* form */
 
 .iit-form {
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .iit-form .form-input-rows .iit-col {
   margin-top: 20px;
   margin-bottom: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.iit-form .form-input-rows input {
+.iit-form .form-input-rows .iit-col input {
   border: 1px solid;
   border-color: #dcdcdc;
   border-radius: 4px;
+  width: 100%;
+  padding-top: 12px;
+  margin: 5px 0;
 }
 
-.iit-form .form-input-rows label {
+.iit-form .form-input-rows .iit-col label {
   font-family: "Poppins-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
   color: #676767;
   float: left;
   margin-right: 1em;
-}
-
-.iit-form .form-input-rows .iit-col #inv-input {
-  width: 500px;
 }
 
 .iit-form .form-input-rows .iit-col select {
@@ -439,19 +438,35 @@ color: red;
   padding-bottom: 5px;
 }
 
+.iit-form .form-input-rows .iit-col #product-select {
+  border: 1px solid;
+  border-color: #dcdcdc;
+  border-radius: 4px;
+  width: 100%;
+}
+
 /* resume */
 
 .resume-section {
   text-align: left;
+  margin: 40px 0;
 }
 
-.resume-section h4 {
+.resume-section h3 {
   font-weight: bold;
   color: #676767;
 }
 
-.resume-section p {
+.resume-section h4 {
+  margin-bottom: 15px;
+}
+.resume-section h4, h5 {
   color: #676767;
+  font-weight: 100;
+}
+
+.resume-section h5 {
+  margin-top: 5px;
 }
 
 .resume-section .resume-btn {
@@ -460,17 +475,26 @@ color: red;
   border-radius: 4px;
   color: #31708a;
   background-color: transparent;
-  padding: 3px 22px 3px 22px;
+  padding: 3px 22px;
+  font-size: 15px;
 }
 
 /* submit */
-.submit-btn #inv-btn {
+
+.iit-form-submit {
+  text-align: center;
+}
+
+.iit-form-submit button {
   background-color: #31708a;
   border-radius: 4px;
   color: white;
   text-align: center;
-  width: 180px;
-  margin: 20px;
+  padding: 7px 70px;
+  border: none;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 120px;
 }
 
 
@@ -510,28 +534,36 @@ color: red;
   font-weight: 700;
 }*/
 
-.med-pagetitle .med-banner {
+.med-pagetitle .medinfo-text {
   text-align: center;
   position: absolute;
   font-size: 18px;
   color: white;
-  top: 260px;
-  left: 530px;
-}
-
-.medinfo-text h1, h3 {
-  position: relative;
-  font-family: "Poppins-Medium", Helvetica;
+  top: 200px;
+  left: 440px;
 }
 
 .medinfo-text h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
+/* med info header */
+
+.medinfo .medinfo-header {
+  text-align: left;
+  font-size: 15px;
+  color: #31708a;
+  margin: 70px 300px 45px;
+}
  /* form */
 
-.med-form .med-row {
-  margin: 10 30 10 70px;
+ .med-form {
+  margin-left: 300px;
+  margin-right: 300px;
+ }
+
+.med-form .med-col {
+  margin-bottom: 15px;
 }
 
 .med-form input {
@@ -540,6 +572,36 @@ color: red;
   border-radius: 4px;
   padding: 10px;
   width: 100%;
+  margin: 5px 0;
+}
+
+.med-form label {
+  color: #676767;
+  font-size: 15px;
+}
+
+.med-form select {
+  border: 1px solid;
+  border-color: #dcdcdc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* medical inquiry section */
+
+.textarea-header h2 {
+  font-size: 21px;
+  color: #31708a;
+  margin-top: 50px;
+}
+
+.textarea-header h3 {
+  color: #676767;
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 45px;
 }
 
 textarea {
@@ -550,6 +612,56 @@ textarea {
   border-color: #dcdcdc;
   border-radius: 4px;
   height: 282px;
+  margin-bottom: 40px;
+}
+
+/* checkbox and date */
+
+.checkbox-info h3 {
+  color: #676767;
+  line-height: 22px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.medform-row-submit {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.medform-row-submit .med-checkbox label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.medform-row-submit .med-checkbox .med-box {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.medform-row-submit .date-input {
+  margin-left: 380px;
+}
+
+ /* submit */
+
+.medinfo-submit {
+  text-align: center;
+}
+
+.medinfo-submit button {
+  background-color: #31708a;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  padding: 7px 70px;
+  border: none;
+  font-size: 17px;
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 

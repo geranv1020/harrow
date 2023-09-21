@@ -271,13 +271,14 @@ const MedInfo = () => {
                                     </div>
                                     <div className="med-row">
                                         <div className="med-col" key="6">
+                                            <label for="hcp">Type of HCP*</label>
                                             <select name="hcp" required="Required"
                                                 value={values.hcp}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 className={errors.hcp && touched.hcp ? "input-error" : null}
                                             >
-                                                <option value="1">Type of HCP*</option>
+                                                <option value="1"></option>
                                                 <option value="MD">MD</option>
                                                 <option value="DO">DO</option>
                                                 <option value="OD">OD</option>
@@ -292,13 +293,14 @@ const MedInfo = () => {
                                                 : null}
                                         </div>
                                         <div className="med-col" key="8">
+                                            <label for="response">Preferred Method of Response*</label>
                                             <select name="response" required="Required"
                                                 value={values.response}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 className={errors.response && touched.response ? "input-error" : null}
                                             >
-                                                <option value="1">Preferred Method of Response*</option>
+                                                <option value="1"></option>
                                                 <option value="Phone">Phone</option>
                                                 <option value="Email">Email</option>
                                                 <option value="MSL Visit Requested ">MSL Visit Requested</option>
@@ -311,7 +313,7 @@ const MedInfo = () => {
                                 </div>
                                 <div className="textarea-header">
                                     <h2>Medical Inquiry</h2>
-                                    <p>Please type your question below with as much detail as possible.</p>
+                                    <h3>Please type your question below with as much detail as possible.</h3>
                                 </div>
                                 <div className="form-col-R">
                                     <textarea name="inquiry" placeholder=""
@@ -320,31 +322,29 @@ const MedInfo = () => {
                                     ></textarea>
                                 </div>
                                 <div className="checkbox-info">
-                                    <p>
+                                    <h3>
                                         Request Not Valid Without Healthcare Professional’s Acknowledgement Below: By clicking the acknowledgement, I hereby confirm that the
                                         medical information requested was at my initiation, as a healthcare provider, and not solicited in any manner by an ImprimisRx/Harrow
                                         representative. I also certify that the information provided will not be shared with other parties. The wording above accurately reflects the
                                         medical information I am requesting to be provided to me by ImprimisRx/Harrow.
-                                    </p>
+                                    </h3>
                                 </div>
                                 <div className="required-fields">
-                                    <div className="form-row-submit">
-                                        <div className="checkboxs checked">
-                                        <input type="checkbox" name="check"
-                                            value={values.check}
-                                            onChange={handleChange} checked
-                                        />
-                                        <label for="checkbox">Healthcare Professional Approved</label>
-                                        {/* <span className="checkmarks"></span> */}
+                                    <div className="medform-row-submit">
+                                        <div className="med-checkbox checked">
+                                            <label for="checkbox">Healthcare Professional Approved</label>
+                                            <input type="checkbox" name="check" className="med-box"
+                                                value={values.check}
+                                                onChange={handleChange} checked
+                                            />
                                         </div>
                                         <div className="date-input">
                                             <label for="date">Date (mm/dd/yyyy)*</label>
                                             <input type="date" id="date" name="date"/>
                                         </div>
-                                        <div className="submit-btns button-div" style={{ width: "200px"}}>
-                                            <input type="submit" value="Submit" />
-                                        </div>
-                            
+                                    </div>
+                                    <div className="medinfo-submit">
+                                        <button>Submit</button>
                                     </div>
                                 </div>
                             </form>
