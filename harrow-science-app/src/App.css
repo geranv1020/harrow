@@ -34,6 +34,8 @@ color: red;
 
 .hero {
   width: 100%;
+  text-align: center;
+  max-width: inherit;
 }
 
 /*.banner-text {
@@ -59,8 +61,10 @@ color: red;
   position: absolute;
   font-size: 18px;
   color: white;
-  top: 260px;
-  left: 530px;
+  bottom: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
 }
 
 .banner-text h1, h3 {
@@ -177,6 +181,104 @@ color: red;
   padding-bottom: 20px;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+
+.banner .hero {
+    width: 100%;
+  }
+  
+  .banner-text {
+    text-align: center;
+  }
+}
+  /* MEDIA QUERIES 
+  @media screen and (max-width: 980px) {
+  
+  .banner .hero {
+      width: 100%;
+    }
+    
+    .banner-text {
+      text-align: center;
+    }
+  
+    .home-s2 {
+      width: 80%;
+    }
+    
+    .image-row {
+      flex: 0 70%;
+    }
+    
+    .image-row .icon-container {
+      flex: 1 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE TABLETS AND SMALLER 
+  @media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .trainer-bio h3, .trainer-bio h4 {
+      display: block;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+  @media screen and (max-width: 575px) {
+  .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+    
+    .contact-form {
+        order: 3;
+    }
+  }*/
 
 
 
@@ -193,8 +295,10 @@ color: red;
   position: absolute;
   font-size: 18px;
   color: white;
-  top: 200px;
-  left: 240px;
+  top:31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
 }
 
 .clin-banner-text h1, h3 {
@@ -250,8 +354,11 @@ color: red;
 }
 
 .topscreen-btns .med-description p {
-  display: inline-block;
   text-align: left;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 50%;
 }
 
 .topscreen-btns .med-description p span {
@@ -630,9 +737,12 @@ textarea {
   margin-top: 30px;
 }
 
+.medform-row-submit .med-checkbox {
+  position: relative;
+}
+
 .medform-row-submit .med-checkbox label {
-  display: flex;
-  align-items: center;
+  position: relative;
   font-size: 16px;
   margin-right: 20px;
 }
@@ -640,6 +750,7 @@ textarea {
 .medform-row-submit .med-checkbox .med-box {
   margin-right: 5px;
   cursor: pointer;
+  position: absolute;
 }
 
 .medform-row-submit .date-input {
@@ -663,7 +774,6 @@ textarea {
   margin-top: 80px;
   margin-bottom: 120px;
 }
-
 
 /*.message{
   text-align: center;

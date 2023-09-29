@@ -10,7 +10,7 @@ function Header() {
 			</div>
 
 			{/*pages*/}
-			<div>
+			<div className="container navbar">
 				<nav className="menu">
 					<ul className="page-list">
 						<li>

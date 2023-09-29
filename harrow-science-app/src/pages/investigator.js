@@ -3,7 +3,6 @@ import '../App.css';
 import Header from "../common/header";
 import { useFormik } from 'formik';
 import { ContactSchema } from "../schemas";
-import country from "../country";
 import Modal from 'react-modal'
 import Footer from "../common/footer";
 
@@ -59,7 +58,6 @@ const Investigator = () => {
             "email": values.email,
             "city": values.city,
             "states": values.states,
-            "country": values.country,
             "product": values.product,
             "indication": values.indication,
             "title_of_study": values.title_of_study,

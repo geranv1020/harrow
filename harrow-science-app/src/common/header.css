@@ -2,11 +2,11 @@
     font-family: "Poppins-Regular", Helvetica;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
     background-color: #f1f1f1;
-    height: 140px;
 }
 
 .harrow-logo img {
@@ -69,11 +69,21 @@ input[type="search"]:focus {
     outline: none;
 }
 
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    margin-left: 120px;
+    margin-left: 200px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
 }
 
 .menu a {
@@ -101,3 +111,23 @@ input[type="search"]:focus {
     top: 0;
 }*/
 
+/* MEDIA QUERIES */
+
+@media (max-width: 980px) {
+    .navbar {
+      text-align: center;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+  }
+  

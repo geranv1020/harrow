@@ -69,3 +69,11 @@ footer {
     text-decoration: none;
     color: #31708A;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+}
