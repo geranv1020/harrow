@@ -31,7 +31,7 @@ const Home = () => {
             <section>
 				<div className="image-row">
                     <div className="icon-container">
-                        <div className="icon">
+                        <div className="icon phone-icon">
                             <img src="/clinical-icon.svg" alt="phone/tablet icon" />
                         </div>
                         <div className="icon-title">

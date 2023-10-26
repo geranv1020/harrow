@@ -60,11 +60,12 @@ function Clinical() {
             <section className="container data-boxes">
                 <div className="container-row">
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/18827733/"><img src="Linkone.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Dyer D, et al. Triamcinolone for<br/>
+                            visualization during pars plana<br />
+                            vitrectomy
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
@@ -75,11 +76,12 @@ function Clinical() {
                     </div>
 
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/30269924/"><img src="Linktwo.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Thorne J, et al. Triamcinolone vs<br />
+                            Dexamethasone Implant for uveitic<br />
+                            macular edema, the POINT study
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
@@ -90,11 +92,13 @@ function Clinical() {
                     </div>
 
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/21459214/"><img src="Linkthree.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Elman M, et al. 2-year follow-<br />
+                            up of laser and triamcinolone vs<br /> 
+                            ranibizumab for diabetic macular<br />
+                            edema
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
@@ -107,11 +111,12 @@ function Clinical() {
 
                 <div className="container-row">
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/28318344/"><img src="Linkfour.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Steeples L, et al. Triamcinolone<br />
+                            for cystoid macular edema and<br />
+                            inflammatory uveitis
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
@@ -122,11 +127,12 @@ function Clinical() {
                     </div>
 
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/26218262/"><img src="Linkfive.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Chang A, et al. Safety and<br />
+                            efficacy for triamcinolone<br />
+                            for macular edema
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
@@ -137,11 +143,60 @@ function Clinical() {
                     </div>
 
                     <div className="box">
-                        <img src="/grey-square.png" alt="lorem"></img>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/30053470/"><img src="Linksix.png" alt="lorem"></img></a>
                         <p className="line-one">lorem ipsum lorem ipsum</p>
                         <h2 className="line-two">
-                            lorem ipsum lorem ipsum<br />
-                            lorem ipsum
+                            Ganapathy P, et al. Long-term use<br />
+                            of triamcinolone for uveitis
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
+                        <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div className="container-row">
+                    <div className="box">
+                        <a href="https://jamanetwork.com/journals/jamaophthalmology/fullarticle/414998"><img src="Linkseven.png" alt="lorem"></img></a>
+                        <p className="line-one">lorem ipsum lorem ipsum</p>
+                        <h2 className="line-two">
+                            Jonas J, et al. Triamcinolone<br />
+                            for diffuse diabetic macular edema
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
+                        <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
+                    </div>
+
+                    <div className="box">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/32356581/"><img src="Linkeight.png" alt="lorem"></img></a>
+                        <p className="line-one">lorem ipsum lorem ipsum</p>
+                        <h2 className="line-two">
+                            Sasongko M, et al. Triamcinolone vs<br />
+                            bevacizumab, analysis of diabetic<br />
+                            retinopathy progression post<br />
+                            cataract surgery, the DiMECAT trial
+                        </h2>
+                        <p className="line-three">
+                            Lorem ipsum dolor sit amet, consectetur<br />
+                            adipiscing elit. Nam velou valupiu ameru.
+                        </p>
+                        <button>Learn More</button>
+                        <p className="line-four">lorem ipsum</p>
+                    </div>
+
+                    <div className="box">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/23449717/"><img src="Linknine.png" alt="lorem"></img></a>
+                        <p className="line-one">lorem ipsum lorem ipsum</p>
+                        <h2 className="line-two">
+                            Chen H, et al. Pharmacokinetics of<br />
+                            various intravitreal triamcinolone
                         </h2>
                         <p className="line-three">
                             Lorem ipsum dolor sit amet, consectetur<br />
