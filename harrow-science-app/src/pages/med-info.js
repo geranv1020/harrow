@@ -159,10 +159,10 @@ const MedInfo = () => {
             </div> :
                 <section className="medinfo">
                     <div className="container">
+                        <div className="med-form" id="medinfo-form" onSubmit={handleSubmit}>
                         <div className="medinfo-header">
                             <h2>Contact Information of Requesting Healthcare Professional</h2>
                         </div>
-                        <div className="med-form" id="medinfo-form" onSubmit={handleSubmit}>
                             <form>
                                 <div className="medical-info">
                                     <div className="med-row">

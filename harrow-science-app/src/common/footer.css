@@ -10,21 +10,19 @@
     flex: 0 0 25%;
 }
 
-.oneFourthColumn h4 {
+.oneFourthColumn a {
     font-weight: 100;
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 16px 32px;
+    padding: 16px 40px;
     background-color: #021931;
     color: white;
 }
 
-.footerRight {
-    margin-right: 30px;
-}
+
 .footerRight a {
     margin-left: 16px;
     color: #31708A;
@@ -53,10 +51,6 @@ footer {
     font-weight: bold;
 }
 
-.copyright {
-    margin-left: 30px;
-}
-
 .phone p {
     line-height: 25px;
 }
@@ -71,9 +65,36 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 980px) {
-    footer h2, footer div {
-        text-align: center;
+
+@media screen and (max-width: 712px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .footerNewLogo {
+        align-items: left;
+        width: 100%;
+        padding-right: 100px;
+    }
+    
+    .oneFourthColumn .phone .linkedin .address{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        width: 100%;
+    }
+
+    .fullWidthColumn {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 100%;
+    }
+
+    .copyright {
         width: 100%;
     }
 }

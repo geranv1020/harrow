@@ -182,8 +182,9 @@ const Investigator = () => {
                         </p>
                         <h3>Please provide your information below.</h3>
                     </div>
-
-                    <div className="iit-form" id="iit-form" onSubmit={handleSubmit}>
+                </div>
+                <div className="iit-form-body">
+                    <div className="container iit-form" id="iit-form" onSubmit={handleSubmit}>
                         <form className="form-input-rows">
                             <div className="row iit-row">
                                 <div className="col-md-6 iit-col" key="1">

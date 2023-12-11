@@ -28,7 +28,7 @@ const Home = () => {
 					</p>
 				</div>
             </div>
-            <section>
+            <section className="section-icons">
 				<div className="image-row">
                     <div className="icon-container">
                         <div className="icon phone-icon">
@@ -73,8 +73,7 @@ const Home = () => {
                         <div className="container posts">
 						    <div className="top-half">
 							    <p>
-                                    Lorem ipsum dolor sit amet, consectetur<br />
-                                    adipiscing elit, sed do eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                                 </p>
 						    </div>
 						    <div className="bottom-half">
@@ -85,8 +84,7 @@ const Home = () => {
                         <div className="container posts">
                             <div className="top-half">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur<br />
-                                    adipiscing elit, sed do eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                                 </p>
                             </div>
                             <div className="bottom-half">
@@ -97,8 +95,7 @@ const Home = () => {
                         <div className="container posts">
                             <div className="top-half">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur<br />
-                                    adipiscing elit, sed do eiusmod tempor.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                                 </p>
                             </div>
                             <div className="bottom-half">
